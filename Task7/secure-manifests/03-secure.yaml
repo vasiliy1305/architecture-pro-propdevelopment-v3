@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: secure-root-user-pod
+  namespace: audit-zone
+spec:
+  securityContext:
+    runAsNonRoot: true
+    runAsUser: 101
+  containers:
+    - name: nginx
+      image: nginx
+      volumeMounts:
+        - name: tmpfs-run
+          mountPath: /var/run
+        - name: tmpfs-cache
+          mountPath: /var/cache/nginx
+      securityContext:
+        allowPrivilegeEscalation: false
+        capabilities:
+          drop: ["ALL"]
+        seccompProfile:
+          type: RuntimeDefault
+        runAsNonRoot: true
+        runAsUser: 101
+        readOnlyRootFilesystem: true
+  volumes:
+    - name: tmpfs-run
+      emptyDir: {}
+    - name: tmpfs-cache
+      emptyDir: {}
