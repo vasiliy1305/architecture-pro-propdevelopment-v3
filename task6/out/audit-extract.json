@@ -1,0 +1,95 @@
+{
+  "events": [
+    {
+      "user": "system:apiserver",
+      "verb": "list",
+      "ns": null,
+      "resource": "secrets",
+      "name": null,
+      "uri": "/api/v1/secrets?limit=500&resourceVersion=0",
+      "timestamp": "2025-11-01T11:01:09.412377+00:00",
+      "severity": "medium",
+      "tags": [
+        "secrets"
+      ]
+    },
+    {
+      "user": "system:apiserver",
+      "verb": "list",
+      "ns": null,
+      "resource": "secrets",
+      "name": null,
+      "uri": "/api/v1/secrets?limit=500&resourceVersion=0",
+      "timestamp": "2025-11-01T11:01:09.412377+00:00",
+      "severity": "medium",
+      "tags": [
+        "secrets"
+      ]
+    },
+    {
+      "user": "kubernetes-admin",
+      "verb": "create",
+      "ns": null,
+      "resource": "clusterrolebindings",
+      "name": "kubeadm:cluster-admins",
+      "uri": "/apis/rbac.authorization.k8s.io/v1/clusterrolebindings?timeout=10s",
+      "timestamp": "2025-11-01T11:01:32.375480+00:00",
+      "severity": "critical",
+      "tags": [
+        "cluster-admin"
+      ]
+    },
+    {
+      "user": "minikube-user",
+      "verb": "list",
+      "ns": "kube-system",
+      "resource": "secrets",
+      "name": null,
+      "uri": "/api/v1/namespaces/kube-system/secrets?limit=500",
+      "timestamp": "2025-11-01T11:13:50.986723+00:00",
+      "severity": "medium",
+      "tags": [
+        "secrets"
+      ]
+    },
+    {
+      "user": "minikube-user",
+      "verb": "list",
+      "ns": "kube-system",
+      "resource": "secrets",
+      "name": null,
+      "uri": "/api/v1/namespaces/kube-system/secrets?limit=500",
+      "timestamp": "2025-11-01T11:13:50.986723+00:00",
+      "severity": "medium",
+      "tags": [
+        "secrets"
+      ]
+    },
+    {
+      "user": "minikube-user",
+      "verb": "list",
+      "ns": "kube-system",
+      "resource": "secrets",
+      "name": null,
+      "uri": "/api/v1/namespaces/kube-system/secrets?limit=500",
+      "timestamp": "2025-11-01T11:13:51.170676+00:00",
+      "severity": "medium",
+      "tags": [
+        "secrets"
+      ]
+    },
+    {
+      "user": "minikube-user",
+      "verb": "list",
+      "ns": "kube-system",
+      "resource": "secrets",
+      "name": null,
+      "uri": "/api/v1/namespaces/kube-system/secrets?limit=500",
+      "timestamp": "2025-11-01T11:13:51.170676+00:00",
+      "severity": "medium",
+      "tags": [
+        "secrets"
+      ]
+    }
+  ]
+}
